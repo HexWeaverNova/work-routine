@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="allow">
+    <title>工作进度热力图</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #heatmap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            max-width: 800px;
+        }
+        .day {
+            width: 12px;
+            height: 12px;
+            background-color: #ebedf0;
+            border-radius: 2px;
+        }
+        .day.worked {
+            background-color: #216e39;
+        }
+        .month-label {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>工作进度热力图</h1>
+    <div id="heatmap"></div>
+    <script src="script.js"></script>
+</body>
+</html>
